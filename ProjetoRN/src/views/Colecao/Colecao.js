@@ -44,6 +44,7 @@ function Colecao({ navigation }) {
     const voltar = () => {
         navigation.navigate('Inicial') 
     }
+    
     return ( 
         <View style={estiloColecao.container}>
 

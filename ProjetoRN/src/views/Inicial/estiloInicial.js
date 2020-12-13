@@ -60,7 +60,7 @@ botaoContainer: {
 	   },
 	   botaoTexto: {
 	      fontSize: 18,
-	      color: '#FFFFFF',
+	      color: '#000000',
 	      fontWeight: 'bold'
 	   },
 	});

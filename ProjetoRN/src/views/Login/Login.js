@@ -25,16 +25,18 @@ function Login({ navigation }) {
 	            navigation.replace('Inicial');
 	        }
 	    }
-    return (
+return (
 
-	    <View style={estiloLogin.container}>
-	        <ImageBackground source={require('../../../assets/Imagens/fundo.jpg')} style={estiloLogin.fundo}>
-	      
-	                <View style={estiloLogin.logoContainer}>
-	                     <LinearGradient colors={['#17FFC1', '#0B785B', '#032119']} style={estiloLogin.logo}>
-	                    <Entypo name="login" size={50} color='black'/>
-	                    </LinearGradient>
-	                </View>		                <View style={estiloLogin.campoContainer}>
+    <View style={estiloLogin.container}>
+
+        <ImageBackground source={require('../../../assets/Imagens/fundo.jpg')} style={estiloLogin.fundo}>
+
+                <View style={estiloLogin.logoContainer}>
+                    <LinearGradient colors={['#17FFC1', '#0B785B', '#032119']} style={estiloLogin.logo}>
+                    <Entypo name="login" size={50} color='black'/>
+                    </LinearGradient>
+                </View>		                
+                <View style={estiloLogin.campoContainer}>
 	                <Entypo name="user" size={24} color="white" />
 	                <TextInput
                     style={estiloLogin.campo}
@@ -42,26 +44,27 @@ function Login({ navigation }) {
 	                    onChangeText={login => setLogin(login)}
 	                    value={login}
 	                />
-	                </View>
+	            </View>
 	
-	                <View style={estiloLogin.campoContainer}>
+	            <View style={estiloLogin.campoContainer}>
 	                <Foundation name="key" size={24} color="white" />
 	                <TextInput
 	                    style={estiloLogin.campo}
 	                    placeholder="Senha"
 	                    onChangeText={senha => setSenha(senha)}
-	                    value={senha}/>
+	                    value={senha}
+                    />
                 </View>
 
-	                <TouchableOpacity onPress={entrar}>
+	            <TouchableOpacity onPress={entrar}>
 	                <LinearGradient colors={['#17FFC1', '#0B785B', '#032119']} style={estiloLogin.botaoLinearGradient}>
 	                    <MaterialCommunityIcons name="send" size={24} color="black" />
 	                    <Text style={estiloLogin.botaoTexto}>Entrar</Text>
                 </LinearGradient>
                 </TouchableOpacity>
             </ImageBackground>
-        </View>
-	    )
-	}
+    </View>
+	)
+}
 export default Login;
 	

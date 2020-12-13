@@ -30,7 +30,7 @@ function Inicial({ navigation }) {
 	
             <ImageBackground source={require('../../../assets/Imagens/fundo2.jpg')} style={estiloInicial.fundo}>
 	
-                <TouchableOpacity onPress={abrirColecao}>
+                <TouchableOpacity style={estiloInicial.botaoTexto} onPress={abrirColecao}>
                      <ImageBackground source={require('../../../assets/Imagens/colecao.jpg')} style={estiloInicial.BotaoBackground}>
                     <Text style={estiloInicial.botaoTexto}>Coleção</Text>
                     </ImageBackground>

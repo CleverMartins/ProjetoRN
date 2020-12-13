@@ -2,7 +2,7 @@ import React from "react";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Inicial from '../../views/Inicial/Inicial';
 import Colecao from '../../views/Colecao/Colecao';
-import Item from '../../views/Acessorios/Acessorios';
+import Acessorios from '../../views/Acessorios/Acessorios';
 import Perfil from '../../views/Perfil/Perfil';
 import { Entypo } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';

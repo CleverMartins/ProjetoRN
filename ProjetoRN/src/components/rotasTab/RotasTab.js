@@ -42,7 +42,13 @@ const Tab = createBottomTabNavigator();
 	        }}
 	      />
         <Tab.Screen name="Colecao" component={Colecao} />
-     <Tab.Screen name="Perfil" component={Perfil} />
+        <Tab.Screen 
+            name="Perfil" 
+            component={RotasDrawer} 
+	        options={{
+	        unmountOnBlur: false,
+	        }}
+	      />
     </Tab.Navigator>
 );
 }
